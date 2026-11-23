@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessGPT AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2>💪 FitnessGPT</h2>
+
+        <button id="newChatBtn" class="new-chat">+ New Chat</button>
+
+        <nav>
+            <button id="chatNav" class="nav-btn active">💬 Chat</button>
+            <button id="historyNav" class="nav-btn">🕘 History</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>AI Fitness Assistant</p>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header>
+            <h2 id="pageTitle">FitnessGPT AI</h2>
+            <span>Healthy Life Starts Here ❤️</span>
+        </header>
+
+        <section id="chatPage" class="page">
+
+            <div id="chatArea" class="chat-area">
+
+                <div id="welcome" class="welcome">
+                    <h1>Welcome to FitnessGPT 💪</h1>
+                    <p>Your personal AI fitness and diet assistant.</p>
+
+                    <div class="prompts">
+                        <button data-prompt="Give me a healthy diet plan">
+                            🥗 Healthy Diet Plan
+                        </button>
+
+                        <button data-prompt="Give me a beginner workout plan">
+                            🏋️ Workout Plan
+                        </button>
+
+                        <button data-prompt="How can I stay fit and healthy?">
+                            ❤️ Fitness Tips
+                        </button>
+                    </div>
+                </div>
+
+                <div id="messages"></div>
+
+            </div>
+
+            <div class="input-container">
+
+                <div class="input-area">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask anything about fitness..."
+                        autocomplete="off"
+                    >
+
+                    <button id="micBtn" title="Voice Chat">
+                        🎤
+                    </button>
+
+                    <button id="sendBtn">
+                        Send ➤
+                    </button>
+
+                </div>
+
+                <p class="input-note">
+                    🎤 Speak or type your fitness questions
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="historyPage" class="page hidden">
+
+            <div class="history-header">
+                <h2>Chat History</h2>
+                <button id="clearHistoryBtn">Clear All</button>
+            </div>
+
+            <div id="historyList"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
